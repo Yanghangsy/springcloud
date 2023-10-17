@@ -23,8 +23,10 @@ public class PaymentController {
     private PaymentService paymentService;
 
     @PostMapping(value = "/save")
-    public CommonResult savePayment(Payment payment){
+
+    public CommonResult savePayment(@RequestBody Payment payment){
         int result = paymentService.savePayment(payment);
+        log.info("***插入payment参数：****"+payment);
         log.info("***插入payment结果：****"+result);
         if (result>0){
             return new CommonResult(200,"success",result);
@@ -34,7 +36,7 @@ public class PaymentController {
     }
 
     @GetMapping(value = "/get/{id}")
-    public CommonResult savePayment(@PathVariable("id") Long id){
+    public CommonResult getPayment(@PathVariable("id") Long id){
         Payment payment = paymentService.getPaymentId(id);
         log.info("***查询payment结果：****"+payment);
         if (payment!=null){
