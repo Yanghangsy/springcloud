@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41755900-2b40-47c2-8cce-aff4ce09359e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-api-commons/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-api-commons/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-order80/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/yang/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/yang/springcloud/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/yang/springcloud/entities/CommonResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/yang/springcloud/entities/Payment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="41755900-2b40-47c2-8cce-aff4ce09359e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +70,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.45632184",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "vcs.Git",
     "spring.configuration.checksum": "6ca3c5783257dc380b8741123e4a3982",
     "vue.rearranger.settings.migration": "true"
   },
@@ -174,7 +166,7 @@
       <workItem from="1697530649331" duration="1437000" />
       <workItem from="1697532101008" duration="749000" />
       <workItem from="1697532867646" duration="51000" />
-      <workItem from="1697532928394" duration="617000" />
+      <workItem from="1697532928394" duration="2178000" />
     </task>
     <servers />
   </component>
