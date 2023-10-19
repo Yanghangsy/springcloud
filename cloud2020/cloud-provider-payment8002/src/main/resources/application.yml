@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 8002
 
 spring:
   application:
@@ -27,5 +27,5 @@ eureka:
       #设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
   instance:
-    instance-id: payment8001
+    instance-id: payment8002
     prefer-ip-address: true

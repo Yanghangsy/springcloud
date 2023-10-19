@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41755900-2b40-47c2-8cce-aff4ce09359e" name="Changes" comment="" />
+    <list default="true" id="41755900-2b40-47c2-8cce-aff4ce09359e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cloud-eureka-server7001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-eureka-server7002/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/yang/springcloud/OrderMain80.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/yang/springcloud/OrderMain80.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/yang/springcloud/config/ApplicationContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/yang/springcloud/config/ApplicationContextConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/yang/springcloud/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/yang/springcloud/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/yang/springcloud/PaymentMain8001.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/yang/springcloud/PaymentMain8001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/yang/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/yang/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,9 +54,6 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="MavenRunner">
-    <option name="skipTests" value="true" />
-  </component>
   <component name="ProjectId" id="2We7VQG5KXKNKAkN4WfTcLG0wwY" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -62,7 +73,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/stypro/cloud2020/cloud-api-commons/src/main/java/com/yang/springcloud",
+    "last_opened_file_path": "D:/stypro/cloud2020/cloud-provider-payment8002/src/main/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,7 +82,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.45632184",
     "settings.editor.selected.configurable": "vcs.Git",
-    "spring.configuration.checksum": "6ca3c5783257dc380b8741123e4a3982",
+    "spring.configuration.checksum": "f4809f65c632f947da9e10f036c1c36d",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -82,8 +93,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\stypro\cloud2020\cloud-provider-payment8002\src\main\java" />
+      <recent name="D:\stypro\cloud2020\cloud-provider-payment8002\src\main\resources" />
       <recent name="D:\stypro\cloud2020\cloud-api-commons\src\main\java\com\yang\springcloud" />
       <recent name="D:\stypro\cloud2020\cloud-consumer-order80\src\main\java\com\yang\springcloud" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\stypro\cloud2020" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -93,7 +109,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderMain80">
+  <component name="RunManager" selected="Spring Boot.PaymentMain8002 (1)">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="cloud-provider-payment8001" />
       <method v="2">
@@ -103,6 +119,26 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="cloud-provider-payment8001" />
       <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaMain7001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-eureka-server7001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yang.springcloud.EurekaMain7001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yang.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaMain7002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="cloud-eureka-server7002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yang.springcloud.EurekaMain7002" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,14 +169,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PaymentMain8002 (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider-payment8002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yang.springcloud.PaymentMain8002" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yang.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Spring Boot.EurekaMain7002" />
+      <item itemvalue="Spring Boot.PaymentMain8002 (1)" />
+      <item itemvalue="Spring Boot.EurekaMain7001" />
       <item itemvalue="Spring Boot.OrderMain80" />
       <item itemvalue="Spring Boot.PaymentMain8001" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.PaymentMain8002 (1)" />
         <item itemvalue="Spring Boot.PaymentMain8001" />
         <item itemvalue="Spring Boot.OrderMain80" />
+        <item itemvalue="Spring Boot.EurekaMain7001" />
       </list>
     </recent_temporary>
   </component>
@@ -167,6 +221,8 @@
       <workItem from="1697532101008" duration="749000" />
       <workItem from="1697532867646" duration="51000" />
       <workItem from="1697532928394" duration="2178000" />
+      <workItem from="1697610227569" duration="3285000" />
+      <workItem from="1697614679346" duration="8791000" />
     </task>
     <servers />
   </component>
