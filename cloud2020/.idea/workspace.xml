@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41755900-2b40-47c2-8cce-aff4ce09359e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-eureka-server7001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-eureka-server7002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8002/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/yang/springcloud/OrderMain80.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/yang/springcloud/OrderMain80.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/yang/springcloud/config/ApplicationContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/yang/springcloud/config/ApplicationContextConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/yang/springcloud/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/yang/springcloud/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/yang/springcloud/PaymentMain8001.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/yang/springcloud/PaymentMain8001.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/yang/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/yang/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-eureka-server7001/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-eureka-server7001/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-eureka-server7002/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-eureka-server7002/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +64,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/stypro/cloud2020/cloud-provider-payment8002/src/main/java",
+    "last_opened_file_path": "D:/stypro/cloud2020",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -82,7 +73,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.45632184",
     "settings.editor.selected.configurable": "vcs.Git",
-    "spring.configuration.checksum": "f4809f65c632f947da9e10f036c1c36d",
+    "spring.configuration.checksum": "2ff2653fb2a49292b118fa79e6982b46",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -191,10 +182,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PaymentMain8002 (1)" />
         <item itemvalue="Spring Boot.PaymentMain8001" />
-        <item itemvalue="Spring Boot.OrderMain80" />
         <item itemvalue="Spring Boot.EurekaMain7001" />
+        <item itemvalue="Spring Boot.PaymentMain8002 (1)" />
+        <item itemvalue="Spring Boot.OrderMain80" />
       </list>
     </recent_temporary>
   </component>
@@ -223,6 +214,7 @@
       <workItem from="1697532928394" duration="2178000" />
       <workItem from="1697610227569" duration="3285000" />
       <workItem from="1697614679346" duration="8791000" />
+      <workItem from="1697761812881" duration="1674000" />
     </task>
     <servers />
   </component>
