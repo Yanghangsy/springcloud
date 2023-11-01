@@ -43,7 +43,7 @@ public class PaymentController {
         Payment payment = paymentService.getPaymentId(id);
         log.info("***查询payment结果：****,serverPort:"+serverPort+payment);
         if (payment!=null){
-            return new CommonResult(200,"success",payment);
+            return new CommonResult(200,serverPort,payment);
         }else {
             return new CommonResult(444,"error");
         }
