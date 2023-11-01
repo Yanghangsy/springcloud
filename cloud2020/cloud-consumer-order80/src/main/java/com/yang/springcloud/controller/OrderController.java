@@ -2,12 +2,17 @@ package com.yang.springcloud.controller;
 
 import com.yang.springcloud.entities.CommonResult;
 import com.yang.springcloud.entities.Payment;
+import com.yang.springcloud.lb.LoadBalancer;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
+import java.net.URI;
+import java.util.List;
 
 /**
  * @author yanghang
@@ -24,6 +29,12 @@ public class OrderController {
     public static final String PAYMENT_URL="http://CLOUD-PAYMENT-SERVICE";
      @Resource
      RestTemplate restTemplate;
+
+     @Resource
+     private DiscoveryClient discoveryClient;
+
+     @Resource
+     private LoadBalancer loadBalancer;
 
     @PostMapping("/create")
     public CommonResult<Payment> creatPayment(Payment payment){
@@ -45,6 +56,17 @@ public class OrderController {
         }else {
             return new CommonResult<>(444,"操作失败");
         }
+    }
+
+    @GetMapping("/lb")
+    public String getPaymentLB(){
+        List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE");
+        if (instances.isEmpty()){
+            return null;
+        }
+        ServiceInstance instance = loadBalancer.instance(instances);
+        URI uri = instance.getUri();
+        return restTemplate.getForObject(uri+"/payment/lb",String.class);
     }
 
 
