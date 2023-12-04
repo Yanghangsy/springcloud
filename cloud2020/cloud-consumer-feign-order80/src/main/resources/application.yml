@@ -1,0 +1,25 @@
+server:
+  port: 80
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      #设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+#设置feign客户端超时时间（OpenFeign默认支持Ribbon）
+ribbon:
+  #指的是建立连接所用时间，适用于网络正常的情况下，两端连接所用的时间 5000 -> 5s
+  ReadTimeout: 5000
+  #指的是建立连接后从服务器读取到可用资源所用时间
+  ConnectTimeout: 5000
+
+#  feign的日志级别
+
+#NONE :默认的，不显示任何日志；
+#BASIC:仅记录请求方法、URL、响应状态码、执行时间
+#HEADERS:除了BASIC中定义的信息之外，还有请求和响应的头信息
+#FULL：除了HEADERS中定义的信息之外，还有请求和响应的正文及元数据
+logging:
+  level:
+#    feign日志以什么级别监控哪一个接口
+    com.yang.springcloud.service.PaymentFeignService: debug
