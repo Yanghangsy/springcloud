@@ -2,21 +2,19 @@ package com.yang.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @author yanghang
  * @version V1.0
- * @Package PACKAGE_NAME
- * @date 2023/11/1 16:54
+ * @Package com.yang.springcloud
+ * @date 2023/12/5 13:43
  * @description
  */
 @SpringBootApplication
 @EnableFeignClients
-@EnableDiscoveryClient
-public class OrderFeignMain80 {
+public class OrderHystrixMain80 {
     public static void main(String[] args) {
-        SpringApplication.run(OrderFeignMain80.class,args);
+        SpringApplication.run(OrderHystrixMain80.class,args);
     }
 }

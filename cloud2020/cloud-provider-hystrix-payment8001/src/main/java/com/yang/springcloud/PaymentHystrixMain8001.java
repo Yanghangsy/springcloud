@@ -3,20 +3,20 @@ package com.yang.springcloud;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @author yanghang
  * @version V1.0
- * @Package PACKAGE_NAME
- * @date 2023/11/1 16:54
+ * @Package com.yang.springcloud
+ * @date 2023/12/4 16:57
  * @description
  */
 @SpringBootApplication
-@EnableFeignClients
+@EnableEurekaClient
 @EnableDiscoveryClient
-public class OrderFeignMain80 {
+public class PaymentHystrixMain8001 {
     public static void main(String[] args) {
-        SpringApplication.run(OrderFeignMain80.class,args);
+        SpringApplication.run(PaymentHystrixMain8001.class,args);
     }
 }
