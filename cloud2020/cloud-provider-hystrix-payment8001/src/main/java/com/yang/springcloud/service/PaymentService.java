@@ -26,11 +26,11 @@ public class PaymentService {
     // fallbackMethod 设置 paymentInfo_timeout 方法出错了由 paymentInfo_timeoutHandler 方法兜底
     //commandProperties HystrixProperty 设置正常方法的执行时间
     @HystrixCommand(fallbackMethod = "paymentInfo_timeoutHandler",commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "3000")
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "5000")
     })
     public  String paymentInfo_timeout(Integer id){
 
-        int timeNumber=5;
+        int timeNumber=3;
         // int num = 10/0;
         try {
             TimeUnit.SECONDS.sleep(timeNumber);

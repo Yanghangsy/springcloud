@@ -27,3 +27,50 @@
 
 3、服务限流(flowlimit)
 秒杀高并发等操作，严禁一窝蜂的过来拥挤，大家排队，一秒过N个，有序进行
+
+
+六、Hystrix 服务降级 注解与方案
+
+示例：
+```java
+ @HystrixCommand(fallbackMethod = "paymentTimeoutFallbackMethod",commandProperties = {
+ @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds" ,value = "1500")
+   })
+```
+1、@DefaultProperties
+```java
+@DefaultProperties(defaultFallback = "payment_Global_FallbackMethod")
+```
+作用：直接在类上使用，defaultFallback用来标准处理类的错误或者调用的服务等待超时，
+但需要在处理错误或者调用的服务等待超时的时候加上@HystrixCommand
+
+使用场景：处理个别类的服务降级   缺点：代码的耦合程度高，且与业务代码糅合在一起
+
+
+2、@HystrixCommand
+
+    情况一：直接在方法上注释，作用：使用fallbackMethod来标识本方法出现错误或者调用的服务等待超时来处理的方法
+    
+    情况二：结合Feign，与@DefaultProperties结合使用
+3、@HystrixProperty
+
+作用：设置业务处理时间，一旦超出时间则有服务降级方法来进行处理
+
+4、@EnableHystrix
+作用：在主启动类上，Feign中开启Hystrix
+
+```yaml
+#用于服务降级 在注解@FeignClient中添加fallbackFactory属性值
+feign:
+  hystrix:
+    #在feign开启hystrix
+    enabled: true
+```
+
+5、方案
+结合Feign来使用，消费者使用Feign服务调用生产者的接口。可以创建一个fallback类
+继承调用生产者的service接口，使用fallback类来统一处理接口可能报错或被调用方宕机的情况
+
+
+
+
