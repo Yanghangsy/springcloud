@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93ba65fa-40c8-41a6-a456-30eed4c8f69f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud2020/cloud-consumer-hystrix-dashboard9001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud2020/cloud-consumer-hystrix-dashboard9001/src/main/java/com/yang/springcloud/HystrixDashboardMain9001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud2020/cloud-consumer-hystrix-dashboard9001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud2020/mynode/img/Hystrix服务熔断.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud2020/cloud-consumer-feign-hystrix-order80/src/main/java/com/yang/springcloud/controller/OrderHystrixController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud2020/cloud-consumer-feign-hystrix-order80/src/main/java/com/yang/springcloud/controller/OrderHystrixController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud2020/cloud-provider-hystrix-payment8001/src/main/java/com/yang/springcloud/PaymentHystrixMain8001.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud2020/cloud-provider-hystrix-payment8001/src/main/java/com/yang/springcloud/PaymentHystrixMain8001.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud2020/cloud-provider-hystrix-payment8001/src/main/java/com/yang/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud2020/cloud-provider-hystrix-payment8001/src/main/java/com/yang/springcloud/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud2020/cloud-provider-hystrix-payment8001/src/main/java/com/yang/springcloud/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud2020/cloud-provider-hystrix-payment8001/src/main/java/com/yang/springcloud/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud2020/mynode/img/HystrixDashboard.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud2020/mynode/Hystrix.md" beforeDir="false" afterPath="$PROJECT_DIR$/cloud2020/mynode/Hystrix.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud2020/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud2020/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud2020/mynode/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -67,6 +59,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="A:\ideawork\springcloud\cloud2020\mynode\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="A:\ideawork\springcloud\cloud2020\mynode\img" />
     </key>
@@ -213,7 +208,7 @@
       <workItem from="1702341468658" duration="1284000" />
       <workItem from="1702357316553" duration="3628000" />
       <workItem from="1702383184252" duration="2336000" />
-      <workItem from="1702467942356" duration="2821000" />
+      <workItem from="1702467942356" duration="3181000" />
     </task>
     <servers />
   </component>

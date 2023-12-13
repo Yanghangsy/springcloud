@@ -90,5 +90,29 @@ c)熔断半开：部分请求根据规则调用当前服务，如果请求成功
 
 
 
+```java
+  @HystrixCommand(fallbackMethod = "paymentCircuitFallback",commandProperties = {
+                @HystrixProperty(name = "circuitBreaker.enabled",value = "true"), //是否开启断路器
+                @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold",value = "10"),//请求次数
+                @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds",value = "10000"),//时间窗口期
+                @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage",value = "60")//失败率达到多少后跳闸
+        })
+        public String paymentCircuitBreaker(@PathVariable("id") Integer id){
+            if (id < 0){
+                throw new RuntimeException("----id不能为负数----");
+            }
+            String simpleUUID = IdUtil.simpleUUID();
 
+            return Thread.currentThread().getName()+"\t"+"调用成功，流水号："+simpleUUID;
+
+        }
+
+        public String paymentCircuitFallback(@PathVariable("id") Integer id){
+            return "id不能为负数，请稍后再试 id："+id;
+        }
+
+```
+
+HystrixDashboard
+![img.png](img/HystrixDashboard.png)
 
