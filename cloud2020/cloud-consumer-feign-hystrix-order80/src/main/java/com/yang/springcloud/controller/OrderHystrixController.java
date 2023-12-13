@@ -38,7 +38,7 @@ public class OrderHystrixController {
     //方法上使用注释 HystrixCommand 就说明该方法使用了服务降级方法
     @HystrixCommand
     public  String paymentInfo_timeout(@PathVariable("id")Integer id){
-        int num = 10/0;
+        // int num = 10/0;
         String s = paymentHystrixService.paymentInfo_timeout(id);
         return s;
     }
